@@ -1,0 +1,4 @@
+[tg_bot]
+token = 1
+chat_ids = 1|2|3
+admin_id = 1

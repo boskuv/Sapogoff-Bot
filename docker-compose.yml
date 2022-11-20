@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  sapogoff:
+    image: sapogoff
+    build:
+      context: .
+    container_name: sapogoff
+    ports:
+      - "8266:8266"
+    volumes:
+      - ./db/matches.db:/app/db/matches.db
+      - ./bot.ini:/app/bot.ini
+    command: bash -c "python bot.py"
